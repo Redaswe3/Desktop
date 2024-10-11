@@ -68,7 +68,7 @@
      <!-- Sección 1 -->
      <section id="seccion1">
         <article>
-            <h1>ZAPATILLAS</h1>
+            <h1 style="text-align:center;">ZAPATILLAS</h1>
             <style>
                 
               <style>
@@ -142,7 +142,7 @@
 </head>
 <body>
     <article>
-        <h1>ROPÀ</h1>
+        <h1 style="text-align:center;">ROPA</h1>
         <style>
              /* Contenedor principal para alinear las imágenes en una línea */
         .contenedor-imagenes {
@@ -211,29 +211,99 @@
 
     <!-- Sección 3 -->
     <section id="seccion3">
-        <h2>Sección 3: ¿Porque ZapasFlow?</h2>
-        <p>CALIDAD
-
-            Nuestras zapatillas están fabricadas con materiales duraderos y resistentes.
-            Por lo general, se utilizan cuero genuino, cuero sintético de alta calidad, 
-            mallas transpirables, tejidos técnicos y suelas de goma de calidad.
-            Estos materiales aseguran que las zapatillas sean capaces de soportar el
-             desgaste diario y resistir las tensiones causadas por la actividad física.
-             </p>
-            <p> PAGOS
-             El principal beneficio para el comprador es la seguridad en la transacción.
-            Al elegir el envío contra reembolso, el comprador solo pagará cuando reciba y
-            el paquete verifique que cumple con sus expectativas.Esto brinda confianza y 
-            tranquilidad, especialmente en compras en línea donde no se puede inspeccionar
-             el producto antes de adquirirlo.
-             </p>
-             <p>Envíos
-             En nuestro compromiso de brindarte la mejor experiencia de compra, nos 
-             enorgullece ofrecer envíos rápidos y eficientes.Sabemos lo importante que es 
-             para ti recibir tus productos de manera ágil, por lo que nos esforzamos en
-              garantizar que tus pedidos sean enviados con la máxima rapidez.
-            
-        </p>
-    </section>
-</body>
-</html>
+        <style>
+            /* Estilo del cuerpo */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0; /* Fondo general claro */
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Contenedor específico con fondo negro */
+            .seccion-negra {
+                background-color: #1e1e1e; /* Fondo negro */
+                padding: 40px 20px; /* Espaciado interno */
+                color: #ffffff; /* Texto blanco */
+            }
+    
+            /* Contenedor principal */
+            .container {
+                max-width: 1200px; /* Ancho máximo del contenedor */
+                margin: 0 auto; /* Centrar el contenedor */
+                text-align: center;
+            }
+    
+            /* Título */
+            h1 {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+    
+            /* Contenedor de las columnas */
+            .columns {
+                display: flex;
+                justify-content: space-between; /* Distribuir columnas */
+                flex-wrap: nowrap; /* Mantener las columnas en una sola línea */
+            }
+    
+            /* Estilos para cada columna */
+            .column {
+                flex: 0 0 30%; /* Cada columna ocupa el 30% del contenedor */
+                background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+                padding: 20px;
+                margin: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Estilo de los subtítulos */
+            .column h2 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+    
+            /* Estilo del texto en las columnas */
+            .column p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+    
+            /* Adaptabilidad en pantallas pequeñas */
+            @media (max-width: 768px) {
+                .columns {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .column {
+                    flex: 0 0 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Contenedor solo para esta sección con fondo negro -->
+        <div class="seccion-negra">
+            <div class="container">
+                <h1>¿POR QUÉ COMPRAR EN ZAPASFLOW?</h1>
+                <div class="columns">
+                    <div class="column">
+                        <h2>CALIDAD</h2>
+                        <p>Nuestras zapatillas están fabricadas con materiales duraderos y resistentes. Por lo general, se utilizan cuero genuino, cuero sintético de alta calidad, mallas transpirables, tejidos técnicos y suelas de goma de calidad. Estos materiales aseguran que las zapatillas sean capaces de soportar el desgaste diario y resistir las tensiones causadas por la actividad física.</p>
+                    </div>
+                    <div class="column">
+                        <h2>PAGOS</h2>
+                        <p>El principal beneficio para el comprador es la seguridad en la transacción. Al elegir el envío contra reembolso, el comprador solo pagará cuando reciba el paquete y verifique que cumple con sus expectativas. Esto brinda confianza y tranquilidad, especialmente en compras en línea donde no se puede inspeccionar el producto antes de adquirirlo.</p>
+                    </div>
+                    <div class="column">
+                        <h2>ENVÍOS</h2>
+                        <p>En nuestro compromiso de brindarte la mejor experiencia de compra, nos enorgullece ofrecer envíos rápidos y eficientes. Sabemos lo importante que es para ti recibir tus productos de manera ágil, por lo que nos esforzamos en garantizar que tus pedidos sean enviados con la máxima rapidez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
