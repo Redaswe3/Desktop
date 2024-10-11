@@ -27,16 +27,16 @@
 
         /* Estilos para la lista del menú */
         ul {
-            list-style-type: none; /* Elimina las viñetas de la lista */
+            list-style-type: none; 
             margin: 0;
             padding: 0;
-            display: flex; /* Coloca los elementos en una línea */
-            justify-content: space-around; /* Distribuye los elementos */
+            display: flex;
+            justify-content: space-around;
         }
 
         /* Estilos para cada elemento del menú */
         li {
-            display: inline; /* Asegura que los elementos se mantengan en línea */
+            display: inline; 
         }
 
         /* Estilos para los enlaces */
@@ -77,21 +77,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+            flex-wrap: wrap;
             margin: 15px;
         }
         /* Estilo de cada contenedor de imagen */
         .imagen-item {
             text-align: center;
             margin: 15px;
-            flex: 1; /* Hace que los elementos ocupen el mismo espacio */
-            max-width: 200px; /* Limita el ancho máximo de cada elemento */
+            flex: 1; 
+            max-width: 200px;
         }
         /* Estilo de las imágenes */
         .imagen-item img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            width: 100%; 
             height: auto;
-            border-radius: 8px; /* Bordes redondeados */
+            border-radius: 8px;
         }
         /* Estilo del botón */
         .boton-comprar {
@@ -149,21 +149,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+            flex-wrap: wrap; 
             margin: 15px;
         }
         /* Estilo de cada contenedor de imagen */
         .imagen-item {
             text-align: center;
             margin: 15px;
-            flex: 1; /* Hace que los elementos ocupen el mismo espacio */
-            max-width: 200px; /* Limita el ancho máximo de cada elemento */
+            flex: 1; 
+            max-width: 200px;
         }
         /* Estilo de las imágenes */
         .imagen-item img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            width: 100%; 
             height: 200px;
-            border-radius: 8px; /* Bordes redondeados */
+            border-radius: 8px;
         }
         /* Estilo del botón */
         .boton-comprar {
@@ -215,7 +215,7 @@
             /* Estilo del cuerpo */
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f0f0f0; /* Fondo general claro */
+                background-color: #f0f0f0; 
                 color: #333;
                 margin: 0;
                 padding: 0;
@@ -223,15 +223,15 @@
     
             /* Contenedor específico con fondo negro */
             .seccion-negra {
-                background-color: #1e1e1e; /* Fondo negro */
-                padding: 40px 20px; /* Espaciado interno */
-                color: #ffffff; /* Texto blanco */
+                background-color: #1e1e1e; 
+                padding: 40px 20px; 
+                color: #ffffff;
             }
     
             /* Contenedor principal */
             .container {
-                max-width: 1200px; /* Ancho máximo del contenedor */
-                margin: 0 auto; /* Centrar el contenedor */
+                max-width: 1200px; 
+                margin: 0 auto; 
                 text-align: center;
             }
     
@@ -244,14 +244,14 @@
             /* Contenedor de las columnas */
             .columns {
                 display: flex;
-                justify-content: space-between; /* Distribuir columnas */
-                flex-wrap: nowrap; /* Mantener las columnas en una sola línea */
+                justify-content: space-between;
+                flex-wrap: nowrap; 
             }
     
             /* Estilos para cada columna */
             .column {
-                flex: 0 0 30%; /* Cada columna ocupa el 30% del contenedor */
-                background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+                flex: 0 0 30%;
+                background-color: rgba(255, 255, 255, 0.1); 
                 padding: 20px;
                 margin: 10px;
                 border-radius: 8px;
@@ -309,53 +309,53 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f0f0f0; /* Fondo claro para la página */
+                background-color: #f0f0f0; 
                 color: #050505;
                 margin: 0;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between; /* Espacia el contenido para ocupar toda la altura */
-                height: 100vh; /* Altura de la ventana */
+                justify-content: space-between; 
+                height: 100vh; 
             }
     
             .contact-form {
-                background-color: #ffffff; /* Fondo blanco para el formulario */
+                background-color: #ffffff; 
                 padding: 20px;
-                border-radius: 8px; /* Bordes redondeados */
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del formulario */
-                display: flex; /* Usamos flexbox para alinear horizontalmente */
-                flex-wrap: wrap; /* Permite que los elementos se ajusten */
-                justify-content: space-between; /* Espacio entre los elementos */
-                margin: 20px; /* Margen alrededor del formulario */
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: space-between; 
+                margin: 20px;
             }
     
             .contact-form input,
             .contact-form textarea {
-                width: calc(33% - 10px); /* Ancho de los campos, con espacio entre ellos */
-                padding: 10px; /* Espaciado interno */
-                margin-bottom: 15px; /* Espacio entre campos */
-                border: 1px solid #ddd; /* Borde claro */
-                border-radius: 4px; /* Bordes redondeados */
+                width: calc(33% - 10px); 
+                padding: 10px;
+                margin-bottom: 15px; 
+                border: 1px solid #ddd; 
+                border-radius: 4px;
             }
     
             .contact-form textarea {
-                width: calc(100% - 10px); /* Ancho completo para el área de texto */
-                margin-top: 10px; /* Espacio adicional para el área de texto */
+                width: calc(100% - 10px); 
+                margin-top: 10px; 
             }
     
             .contact-form button {
-                background-color: #0c0c0c; /* Fondo negro para el botón */
-                color: #ffffff; /* Texto blanco */
-                border: none; /* Sin borde */
-                padding: 10px; /* Espaciado interno */
-                border-radius: 4px; /* Bordes redondeados */
-                cursor: pointer; /* Cursor de mano */
-                width: 100%; /* Ancho completo para el botón */
+                background-color: #0c0c0c; 
+                color: #ffffff; 
+                border: none; 
+                padding: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%; 
             }
     
             .contact-form button:hover {
-                background-color: #080808; /* Color más claro al pasar el mouse */
+                background-color: #080808; 
             }
         </style>
     </head>
@@ -373,8 +373,82 @@
                 <button type="submit">Enviar</button>
             </form>
         </div>
-    </body>
-    </html>
-    
-    
-    
+        <title>ZapasFlow- Login/Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+        }
+
+        .login-register-table {
+            position: absolute; 
+            top: 20px;
+            right: 20px;
+            background-color: #ffffff; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+            width: 300px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+        }
+
+        th {
+            background-color: #f7f7f7; 
+        }
+
+        .login-register-table button {
+            background-color: #000000; 
+            color: #ffffff;
+            border: none; 
+            padding: 10px; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-top: 10px;
+        }
+
+        .login-register-table button:hover {
+            background-color: #000000; 
+        }
+    </style>
+</head>
+<body>
+    <div class="login-register-table">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Login/Register</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="username" placeholder="Nombre de usuario" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="Contraseña" required></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Iniciar sesión</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
