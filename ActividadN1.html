@@ -305,5 +305,76 @@
                 </div>
             </div>
         </div>
+        <title>ZapasFlow - Contacto</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0; /* Fondo claro para la página */
+                color: #050505;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; /* Espacia el contenido para ocupar toda la altura */
+                height: 100vh; /* Altura de la ventana */
+            }
+    
+            .contact-form {
+                background-color: #ffffff; /* Fondo blanco para el formulario */
+                padding: 20px;
+                border-radius: 8px; /* Bordes redondeados */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del formulario */
+                display: flex; /* Usamos flexbox para alinear horizontalmente */
+                flex-wrap: wrap; /* Permite que los elementos se ajusten */
+                justify-content: space-between; /* Espacio entre los elementos */
+                margin: 20px; /* Margen alrededor del formulario */
+            }
+    
+            .contact-form input,
+            .contact-form textarea {
+                width: calc(33% - 10px); /* Ancho de los campos, con espacio entre ellos */
+                padding: 10px; /* Espaciado interno */
+                margin-bottom: 15px; /* Espacio entre campos */
+                border: 1px solid #ddd; /* Borde claro */
+                border-radius: 4px; /* Bordes redondeados */
+            }
+    
+            .contact-form textarea {
+                width: calc(100% - 10px); /* Ancho completo para el área de texto */
+                margin-top: 10px; /* Espacio adicional para el área de texto */
+            }
+    
+            .contact-form button {
+                background-color: #0c0c0c; /* Fondo negro para el botón */
+                color: #ffffff; /* Texto blanco */
+                border: none; /* Sin borde */
+                padding: 10px; /* Espaciado interno */
+                border-radius: 4px; /* Bordes redondeados */
+                cursor: pointer; /* Cursor de mano */
+                width: 100%; /* Ancho completo para el botón */
+            }
+    
+            .contact-form button:hover {
+                background-color: #080808; /* Color más claro al pasar el mouse */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Bienvenido a ZapasFlow</h1>
+            <p>Tu tienda de zapatillas y ropa preferida.</p>
+        </div>
+        <div class="contact-form">
+            <form action="tu_script.php" method="post"> 
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="text" name="asunto" placeholder="Asunto" required>
+                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </body>
     </html>
+    
+    
+    
