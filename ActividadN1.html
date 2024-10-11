@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>reda Title</title>
+<title>ZapasFLow</title>
 </head>
 <body>
+    <header>
+        <div style="text-align:center;">
+        <img 
+        src="Imagenes/img-logo.png" alt="logo" width="200" height="200">
+        </div>
+    </header>
     <nav>
         <ul>
             <li><a href="#seccion1">HOME</a></li>
@@ -11,14 +17,73 @@
             <li><a href="#seccion3">CONTACT</a></li>
         </ul>
     </nav>
-    
-    <header>
-        <img src="ruta/a/Pictures/logo-black.png" alt="logo" width="300" height="300">
-    </header>
-    
+     <!-- Sección 1 -->
+     <section id="seccion1">
+        <article>
+            <style>
+                .imagenes-grind {
+                    display: grid;
+                    grid-template-columns: repeat(4,330px);/* 4 imagenes por fila*/
+                    gap: 100px; /* Espacio entre las imagenes*/
+                }
+                img {
+                    width: 330px;
+                    height:  330px;
+                }
+                </style>
+                </head>
+                <body>
+                    <h2>ZAPATILLAS</h2>
+                    <div class="imagenes grind">
+                    <img src="Imagenes/Zap1.jpg" alt="Imagen1">
+                    <img src="Imagenes/Zap2.jpg" alt="Imagen2">
+                    <img src="Imagenes/Zap3.jpg" alt="Imagen3">
+                    <img src="Imagenes/Zap4.jpg" alt="Imagen4">
+                    </div>
+        </article>
+    </section>
 
-<h1>Tienda de Zapatillas</h1>
-<p>This is a paragraph.</p>
+    <!-- Sección 2 -->
+    <section id="seccion2">
+        <style>
+            .imagenes-grind {
+                display: grid;
+                grid-template-columns: repeat(4,330px);/* 4 imagenes por fila*/
+                gap: 90px; /* Espacio entre las imagenes*/
+            }
+            img {
+                width: 330px;
+                height:  330px;
+            }
+            </style>
+            </head>
+            <body>
+                <h2>ROPA</h2>
+                <div class="imagenes grind">
+                <img src="Imagenes/Ropa1.jpg" alt="Imagen5">
+                <img src="Imagenes/Ropa2.jpg" alt="Imagen6">
+                <img src="Imagenes/Ropa3.jpg" alt="Imagen7">
+                <img src="Imagenes/Ropa4.jpg" alt="Imagen8">
+                </div>
+        
+        </article>
+    </section>
 
+    <!-- Sección 3 -->
+    <section id="seccion3">
+        <h2>Sección 3: ¿Porque ZapasFlow?</h2>
+        <aside>
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-html">Codecademy</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
