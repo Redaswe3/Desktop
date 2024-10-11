@@ -20,52 +20,144 @@
      <!-- Sección 1 -->
      <section id="seccion1">
         <article>
+            <h1>ZAPATILLAS</h1>
             <style>
-                .imagenes-grind {
-                    display: grid;
-                    grid-template-columns: repeat(4,330px);/* 4 imagenes por fila*/
-                    gap: 100px; /* Espacio entre las imagenes*/
-                }
-                img {
-                    width: 330px;
-                    height:  330px;
-                }
-                </style>
-                </head>
-                <body>
-                    <h2>ZAPATILLAS</h2>
-                    <div class="imagenes grind">
-                    <img src="Imagenes/Zap1.jpg" alt="Imagen1">
-                    <img src="Imagenes/Zap2.jpg" alt="Imagen2">
-                    <img src="Imagenes/Zap3.jpg" alt="Imagen3">
-                    <img src="Imagenes/Zap4.jpg" alt="Imagen4">
-                    </div>
+                
+              <style>
+        /* Contenedor principal para alinear las imágenes en una línea */
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+            margin: 15px;
+        }
+        /* Estilo de cada contenedor de imagen */
+        .imagen-item {
+            text-align: center;
+            margin: 15px;
+            flex: 1; /* Hace que los elementos ocupen el mismo espacio */
+            max-width: 200px; /* Limita el ancho máximo de cada elemento */
+        }
+        /* Estilo de las imágenes */
+        .imagen-item img {
+            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            height: auto;
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        /* Estilo del botón */
+        .boton-comprar {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        /* Efecto hover del botón */
+        .boton-comprar:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-imagenes">
+        <div class="imagen-item">
+            <img src="Imagenes/Zap1.jpg" alt="imagen 1">
+            <p>Nike Shox Tl</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap2.jpg" alt="imagen 2">
+            <p>Nike Air Force 1</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap3.jpg" alt="imagen 3">
+            <p>Nike Air Max Tn</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap4.jpg" alt="imagen 4">
+            <p>Nike Air Max Tuned 3</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+    </div>
         </article>
     </section>
 
     <!-- Sección 2 -->
     <section id="seccion2">
+</head>
+<body>
+    <article>
+        <h1>ROPÀ</h1>
         <style>
-            .imagenes-grind {
-                display: grid;
-                grid-template-columns: repeat(4,330px);/* 4 imagenes por fila*/
-                gap: 120px; /* Espacio entre las imagenes*/
-            }
-            img {
-                width: 330px;
-                height:  330px;
-            }
-            </style>
-            </head>
-            <body>
-                <h2>ROPA</h2>
-                <div class="imagenes grind">
-                <img src="Imagenes/Ropa1.jpg" alt="Imagen5">
-                <img src="Imagenes/Ropa2.jpg" alt="Imagen6">
-                <img src="Imagenes/Ropa3.jpg" alt="Imagen7">
-                <img src="Imagenes/Ropa4.jpg" alt="Imagen8">
-                </div>
-        
+             /* Contenedor principal para alinear las imágenes en una línea */
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+            margin: 15px;
+        }
+        /* Estilo de cada contenedor de imagen */
+        .imagen-item {
+            text-align: center;
+            margin: 15px;
+            flex: 1; /* Hace que los elementos ocupen el mismo espacio */
+            max-width: 200px; /* Limita el ancho máximo de cada elemento */
+        }
+        /* Estilo de las imágenes */
+        .imagen-item img {
+            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            height: 200px;
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        /* Estilo del botón */
+        .boton-comprar {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        /* Efecto hover del botón */
+        .boton-comprar:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+    
+    <div class="contenedor-imagenes">
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa1.jpg" alt="imagen 5">
+            <figcaption>Nike Teech Fleece</figcaption>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa3.jpg" alt="imagen 6">
+            <figcaption>Chándal Lacoste</figcaption>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa2.jpg" alt="imagen 7">
+            <figcaption>Chándal Ralph Lauren</figcaption>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa4.jpg" alt="imagen 8">
+            <figcaption>Chándal Lacoste</figcaption>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </figure>
+    </div>
         </article>
     </section>
 
@@ -95,9 +187,5 @@
             
         </p>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
