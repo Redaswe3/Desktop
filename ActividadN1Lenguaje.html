@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZapasFLow</title>
+</head>
+<body>
+    <header>
+        <div style="text-align:center;">
+        <img 
+        src="Imagenes/logo1.png" alt="logo" width="330" height="100">
+        </div>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #0c0c0c;
+            padding: 10px 20px;
+        }
+
+        ul {
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            display: inline; 
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            font-size: 16px;
+        }
+
+        a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+     <section id="seccion1">
+            <h1 style="text-align:center;">ZAPATILLAS</h1>   
+              <style>
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 15px;
+        }
+        .imagen-item {
+            text-align: center;
+            margin: 15px;
+            flex: 1; 
+            max-width: 200px;
+        }
+        .imagen-item img {
+            width: 100%; 
+            height: auto;
+            border-radius: 8px;
+        }
+        .boton-comprar {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #030303;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .boton-comprar:hover {
+            background-color: #030303;
+        }
+    </style>
+    <div class="contenedor-imagenes">
+        <div class="imagen-item">
+            <img src="Imagenes/Zap1.jpg" alt="imagen 1">
+            <p>Nike Shox Tl</p>
+            <a href="#" class="boton-comprar">Comprar 59,99€</a><a href="#" onclick="mostrarVideo()" style="color: blue; text-decoration: underline; cursor: pointer;">Ver Video</a><div id="videoContainer" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+                <div style="position: relative; width: 80%; max-width: 250px;">
+                    <video id="video1" width="100%" controls>
+                        <source src="videos/video zapatilla 1.mov" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <button onclick="cerrarVideo()" style="position: absolute; top: 10px; right: 10px; background: white; border: none; padding: 10px; cursor: pointer;">Cerrar</button>
+                </div>
+            </div><script>
+    function mostrarVideo() {
+        document.getElementById('videoContainer').style.display = 'flex'; 
+    }
+
+    function cerrarVideo() {
+        document.getElementById('videoContainer').style.display = 'none'; 
+        document.getElementById('video1').pause();
+        document.getElementById('video1').currentTime = 0; 
+    }
+</script>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap2.jpg" alt="imagen 2">
+            <p>Nike Air Force 1</p>
+            <figcaption href="#" class="boton-comprar">Comprar 59,99€</figcaption>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap3.jpg" alt="imagen 3">
+            <p>Nike Air Max Tn</p>
+            <figcaption href="#" class="boton-comprar">Comprar 59,99€</figcaption>
+        </div>
+        <div class="imagen-item">
+            <img src="Imagenes/Zap4.jpg" alt="imagen 4">
+            <p>Nike Air Max Tuned 3</p>
+            <figcaption href="#" class="boton-comprar">Comprar 59,99€</figcaption>
+        </div>
+    </div>
+        </article>
+    </section>
+    
+    <section id="seccion2">
+    <article>
+        <h1 style="text-align:center;">ROPA</h1>
+        <style>
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; 
+            margin: 15px;
+        }
+        /* Estilo de cada contenedor de imagen */
+        .imagen-item {
+            text-align: center;
+            margin: 15px;
+            flex: 1; 
+            max-width: 200px;
+        }
+        /* Estilo de las imágenes */
+        .imagen-item img {
+            width: 100%; 
+            height: 200px;
+            border-radius: 8px;
+        }
+        /* Estilo del botón */
+        .boton-comprar {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #030303;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        /* Efecto hover del botón */
+        .boton-comprar:hover {
+            background-color: #000000;
+        }
+    </style>
+    <div class="contenedor-imagenes">
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa1.jpg" alt="imagen 5">
+            <figcaption>Nike Teech Fleece</figcaption>
+            <figcaption  href="#" class="boton-comprar">Comprar 64,99€</figcaption>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa3.jpg" alt="imagen 6">
+            <figcaption>Chándal Lacoste</figcaption>
+            <figcaption href="#" class="boton-comprar">Comprar 64,99€</figcaption>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa2.jpg" alt="imagen 7">
+            <figcaption>Chándal Ralph Lauren</figcaption>
+            <figcaption href="#" class="boton-comprar">Comprar 64,99€</figcaption>
+        </figure>
+        <figure class="imagen-item">
+            <img src="Imagenes/Ropa5.jpeg" alt="imagen 8">
+            <figcaption>Chándal Corteiz</figcaption>
+            <figcaption href="#" class="boton-comprar">Comprar 64,99€</figcaption>
+        </figure>
+    </div>
+        </article>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="seccion3">
+        <style>
+            /* Estilo del cuerpo */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0; 
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Contenedor específico con fondo negro */
+            .seccion-negra {
+                background-color: #1e1e1e; 
+                padding: 40px 20px; 
+                color: #ffffff;
+            }
+    
+            /* Contenedor principal */
+            .container {
+                max-width: 1200px; 
+                margin: 0 auto; 
+                text-align: center;
+            }
+    
+            /* Título */
+            h1 {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+    
+            /* Contenedor de las columnas */
+            .columns {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap; 
+            }
+    
+            /* Estilos para cada columna */
+            .column {
+                flex: 0 0 30%;
+                background-color: rgba(255, 255, 255, 0.1); 
+                padding: 20px;
+                margin: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Estilo de los subtítulos */
+            .column h2 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+    
+            /* Estilo del texto en las columnas */
+            .column p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+    
+            /* Adaptabilidad en pantallas pequeñas */
+            @media (max-width: 768px) {
+                .columns {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .column {
+                    flex: 0 0 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+        <div class="seccion-negra">
+            <div class="container">
+                <h1>¿POR QUÉ COMPRAR EN ZAPASFLOW?</h1>
+                <div class="columns">
+                    <div class="column">
+                        <h2>CALIDAD</h2>
+                        <p>Nuestras zapatillas están fabricadas con materiales duraderos y resistentes. Por lo general, se utilizan cuero genuino, cuero sintético de alta calidad, mallas transpirables, tejidos técnicos y suelas de goma de calidad. Estos materiales aseguran que las zapatillas sean capaces de soportar el desgaste diario y resistir las tensiones causadas por la actividad física.</p>
+                    </div>
+                    <div class="column">
+                        <h2>PAGOS</h2>
+                        <p>El principal beneficio para el comprador es la seguridad en la transacción. Al elegir el envío contra reembolso, el comprador solo pagará cuando reciba el paquete y verifique que cumple con sus expectativas. Esto brinda confianza y tranquilidad, especialmente en compras en línea donde no se puede inspeccionar el producto antes de adquirirlo.</p>
+                    </div>
+                    <div class="column">
+                        <h2>ENVÍOS</h2>
+                        <p>En nuestro compromiso de brindarte la mejor experiencia de compra, nos enorgullece ofrecer envíos rápidos y eficientes. Sabemos lo importante que es para ti recibir tus productos de manera ágil, por lo que nos esforzamos en garantizar que tus pedidos sean enviados con la máxima rapidez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <title>ZapasFlow - Contacto</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0; 
+                color: #050505;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+                height: 100vh; 
+            }
+    
+            .contact-form {
+                background-color: #ffffff; 
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: space-between; 
+                margin: 20px;
+            }
+    
+            .contact-form input,
+            .contact-form textarea {
+                width: calc(33% - 10px); 
+                padding: 10px;
+                margin-bottom: 15px; 
+                border: 1px solid #ddd; 
+                border-radius: 4px;
+            }
+    
+            .contact-form textarea {
+                width: calc(100% - 10px); 
+                margin-top: 10px; 
+            }
+    
+            .contact-form button {
+                background-color: #0c0c0c; 
+                color: #ffffff; 
+                border: none; 
+                padding: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%; 
+            }
+    
+            .contact-form button:hover {
+                background-color: #080808; 
+            }
+        </style>
+        <div class="content">
+            <h1>Bienvenido a ZapasFlow</h1>
+            <p>Tu tienda de zapatillas y ropa preferida.</p>
+        </div>
+        <div class="contact-form">
+            <form action="tu_script.php" method="post"> 
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="text" name="asunto" placeholder="Asunto" required>
+                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <title>ZapasFlow- Login/Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+        }
+
+        .login-register-table {
+            position: absolute; 
+            top: 15px;
+            right: 15px;
+            background-color: #ffffff; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+            width: 188px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 7px; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+        }
+
+        th {
+            background-color: #f7f7f7; 
+        }
+
+        .login-register-table button {
+            background-color: #000000; 
+            color: #ffffff;
+            border: none; 
+            padding: 10px; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-top: 10px;
+        }
+
+        .login-register-table button:hover {
+            background-color: #000000; 
+        }
+    </style>
+
+    <div class="login-register-table">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Login/Register</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="username" placeholder="Nombre de usuario" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="Contraseña" required></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Iniciar sesión</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer style="background-color: #050505; color: #fff; padding: 20px; text-align: center;">
+        <div>
+            <p>&copy; 2024 Tienda de Zapatillas y Ropa.
+            <p>Zapatillas: Nike | Ropa: Zaragoza Shop</p>
+        </div>
+        <div>
+            <p>Aquí tienes sus redes sociales:</p>
+            <a href="https://www.Nike.com" target="_blank" style="color: #fff; margin: 0 10px;">Nike</a>
+            <a href="https://www.instagram.com/zaragoza__shop?igsh=ZG5hd3E0a2Rxemlp" target="_blank" style="color: #fff; margin: 0 10px;">ZaragozaShop</a>
+        </div>
+    </footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZapasFlow: Tu tienda de zapatillas y ropa exclusiva. Encuentra las últimas tendencias y productos de Nike y ZapasFlow.">
+    <meta name="keywords" content="zapatillas, ropa, Nike, ZapasFlow, moda, tienda de ropa, zapatillas deportivas, calzado, accesorios">
+    <meta name="author" content="ZapasFlow">
+</body>
+</html>
+    
